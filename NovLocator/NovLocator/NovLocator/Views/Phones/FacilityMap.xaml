@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:Maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps.dll"
+			 x:Class="NovLocator.Views.Phones.FacilityMap"
+			 Title="Map">
+	
+	<StackLayout Orientation="Vertical" HorizontalOptions="Fill">
+		<StackLayout VerticalOptions="FillAndExpand" WidthRequest="960" HeightRequest="100">			
+		</StackLayout>
+		<StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+			<Button Text="Back" Clicked="btnBack_Clicked" />
+			<Button Text="Re-Center Location" Clicked="btnReCenterLocation_Clicked" />
+		</StackLayout>
+	</StackLayout>
+  
+</ContentPage>

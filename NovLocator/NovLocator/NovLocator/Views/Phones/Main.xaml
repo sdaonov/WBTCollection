@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="NovLocator.Views.Phones.Main"
+			 Title="Home">
+
+	<StackLayout Orientation="Vertical" HorizontalOptions="Fill">
+		<Label Text="Please select facilities to view on map" HorizontalOptions="FillAndExpand" />
+		<ListView x:Name="lstFacilities">
+			<ListView.ItemTemplate>
+			<DataTemplate>
+				<ViewCell>
+				<StackLayout Padding="0" HorizontalOptions="Fill" Orientation="Horizontal">
+					<Label Text="{Binding Name}" XAlign="Start" YAlign="Center" />
+				</StackLayout>
+				</ViewCell>
+			</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+		<!--<StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+			<Button Text="View" Clicked="btnView_Clicked" />
+			<Button Text="Uncheck All" Clicked="btnUncheckAll_Clicked" />
+		</StackLayout>-->
+	</StackLayout>
+</ContentPage>
